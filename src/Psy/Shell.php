@@ -60,6 +60,7 @@ class Shell extends Application
     private $includes;
     public $listeners;
     private $loop;
+    public $listeners;
 
     /**
      * Create a new Psy Shell.
