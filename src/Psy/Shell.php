@@ -279,8 +279,9 @@ class Shell extends Application
                 continue;
             }
 
+            $this->readline->addHistory($input);
+
             if ($this->hasCommand($input)) {
-                $this->readline->addHistory($input);
                 $this->runCommand($input);
                 continue;
             }
@@ -495,7 +496,6 @@ class Shell extends Application
     {
         if ($this->hasValidCode()) {
             $code = $this->code;
-            $this->readline->addHistory($code);
             $this->resetCodeBuffer();
 
             return $code;
