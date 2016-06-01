@@ -175,7 +175,7 @@ class ShellOutput extends ConsoleOutput
         $formatter = $this->getFormatter();
 
         $formatter->setStyle('warning', new OutputFormatterStyle('black', 'yellow'));
-        $formatter->setStyle('aside',   new OutputFormatterStyle('blue'));
+        $formatter->setStyle('aside',   new OutputFormatterStyle('cyan'));
         $formatter->setStyle('strong',  new OutputFormatterStyle(null, null, array('bold')));
         $formatter->setStyle('return',  new OutputFormatterStyle('cyan'));
         $formatter->setStyle('urgent',  new OutputFormatterStyle('red'));
@@ -187,7 +187,7 @@ class ShellOutput extends ConsoleOutput
         $formatter->setStyle('private',   new OutputFormatterStyle('red'));
         $formatter->setStyle('global',    new OutputFormatterStyle('cyan', null, array('bold')));
         $formatter->setStyle('const',     new OutputFormatterStyle('cyan'));
-        $formatter->setStyle('class',     new OutputFormatterStyle('blue', null, array('underscore')));
+        $formatter->setStyle('class',     new OutputFormatterStyle('cyan', null, array('underscore')));
         $formatter->setStyle('function',  new OutputFormatterStyle(null));
         $formatter->setStyle('default',   new OutputFormatterStyle(null));
 
@@ -196,8 +196,8 @@ class ShellOutput extends ConsoleOutput
         $formatter->setStyle('string',   new OutputFormatterStyle('green'));
         $formatter->setStyle('bool',     new OutputFormatterStyle('cyan'));
         $formatter->setStyle('keyword',  new OutputFormatterStyle('yellow'));
-        $formatter->setStyle('comment',  new OutputFormatterStyle('blue'));
-        $formatter->setStyle('object',   new OutputFormatterStyle('blue'));
+        $formatter->setStyle('comment',  new OutputFormatterStyle('cyan'));
+        $formatter->setStyle('object',   new OutputFormatterStyle('cyan'));
         $formatter->setStyle('resource', new OutputFormatterStyle('yellow'));
     }
 }
